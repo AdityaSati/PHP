@@ -1,10 +1,15 @@
         <?php
+        if(isset($_POST['submit'])){
             $name=$_POST['name'];
             $email=$_POST['email'];
             $contact=$_POST['contact'];
             $city=$_POST['city'];
             $course=$_POST['course'];
             $interests=$_POST['interests'];
+        }
+        else{
+            echo "No input";
+        }
         ?>
 
         <!DOCTYPE html>
